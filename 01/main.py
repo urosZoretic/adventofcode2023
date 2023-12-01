@@ -74,7 +74,7 @@ if __name__ == '__main__':
     
     print("part 1 rs: ", sumDigits)
 
-    ## part2 copied first part here and aded functionalities
+    ## part2 copied first part here and added functionalities
     sumDigits = 0
     for line in lines:
         firstDigit = ''
