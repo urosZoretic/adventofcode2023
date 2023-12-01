@@ -9,40 +9,37 @@ def checkDigit(c):
 def checkDigitSpelled(index, text):
     if index + 3 > len(text):
         return ''
-
-    if text[index:index + 3] == 'one':
-        return '1'
     
-    if text[index:index + 3] == 'two':
-        return '2'
-
-    if text[index:index + 3] == 'six':
-        return '6'
+    match text[index:index + 3]:
+        case 'one':
+            return '1'
+        case 'two':
+            return '2'
+        case 'six':
+            return '6'
 
     if index + 4 > len(text):
         return ''
 
+    match text[index:index + 4]:
+        case 'four':
+            return '4'
+        case 'five':
+            return '5'
+        case 'nine':
+            return '9'
     
-    if text[index:index + 4] == 'four':
-        return '4'
-
-    if text[index:index + 4] == 'five':
-        return '5'
-    
-    if text[index:index + 4] == 'nine':
-        return '9'
 
     if index + 5 > len(text):
         return ''
 
-    if text[index:index + 5] == 'seven':
-        return '7'
-
-    if text[index:index + 5] == 'eight':
-        return '8'
-    
-    if text[index:index + 5] == 'three':
-        return '3'
+    match text[index:index + 5]:
+        case 'seven':
+            return '7'
+        case 'eight':
+            return '8'
+        case 'three':
+            return '3'
 
 
     return ''
