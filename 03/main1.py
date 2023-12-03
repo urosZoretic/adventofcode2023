@@ -1,7 +1,7 @@
 
-inputFile = "./03/input_example_1.txt"
+# inputFile = "./03/input_example_1.txt"
 
-# inputFile = "./03/input.txt"
+inputFile = "./03/input.txt"
 
 
 def isDigit(val):
@@ -57,11 +57,9 @@ if __name__ == '__main__':
     # print(numbers)
     # print(symbols)
 
-    adjecentNumbers = []
     sumAdjecentNumbers = 0
     for number in numbers:
         if isNumberAdjecentToSymbol(number, symbols):
-            # adjecentNumbers.append(number[0])
             sumAdjecentNumbers += number[0]
 
 
